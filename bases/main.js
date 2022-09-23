@@ -6,6 +6,7 @@ const h1 = document.querySelector('h1');
 const pClass = document.querySelector('.paragraph');
 const pId = document.getElementById('paragraphId');
 const input = document.querySelector('input');
+const imgContainer = document.getElementById('imgContainer');
 
 
 // Leer propiedades de las etiquetas HTML.
@@ -33,6 +34,8 @@ h1.textContent = 'Texto';
 // Manipular atributos de las etiquetas HTML.
 h1.setAttribute('atributo', 'Valor');
 
+
+
 // Manipular clases de las etiquetas HTML.
 h1.classList.add('clase'); // Agregar clase
 h1.classList.remove('clase'); // Quitar clase
@@ -48,7 +51,15 @@ h1.className = 'Clase';
 // Crear elementos HTML.
 const nombreVariable = document.createElement('elemento');
 
-const subTitle = document.createElement('h2');
+const img = document.createElement('img');
 
 
-// 
+// Agregar elementos al DOM.
+contenedor.append(elemento);
+contenedor.appendChild(elemento);
+
+imgContainer.append(img);
+
+
+// Limpiar contenido de los elementos.
+elemento.innerHTML = '';
